@@ -1,0 +1,537 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasad - Full Stack Developer</title>
+    <meta name="description" content="I’m Prasad, a 3rd-year Computer Science and Engineering student with a passion for building innovative software solutions. I enjoy exploring full-stack web development, artificial intelligence, and problem-solving through coding. Over time, I’ve worked on various academic and personal projects that have strengthened my skills in modern programming languages, frameworks, and collaborative development. I’m eager to keep learning, take on challenging projects, and contribute to impactful technology.">
+    <meta name="keywords" content="web developer, full stack, portfolio, Prasad">
+    <meta name="author" content="Prasad">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{WEBSITE_URL}}">
+    <meta property="og:title" content="Prasad - Full Stack Developer">
+    <meta property="og:description" content="I’m Prasad, a 3rd-year Computer Science and Engineering student with a passion for building innovative software solutions. I enjoy exploring full-stack web development, artificial intelligence, and problem-solving through coding. Over time, I’ve worked on various academic and personal projects that have strengthened my skills in modern programming languages, frameworks, and collaborative development. I’m eager to keep learning, take on challenging projects, and contribute to impactful technology.">
+    <meta property="og:image" content="{{WEBSITE_URL}}/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prasad - Full Stack Developer">
+    <meta name="twitter:description" content="I’m Prasad, a 3rd-year Computer Science and Engineering student with a passion for building innovative software solutions. I enjoy exploring full-stack web development, artificial intelligence, and problem-solving through coding. Over time, I’ve worked on various academic and personal projects that have strengthened my skills in modern programming languages, frameworks, and collaborative development. I’m eager to keep learning, take on challenging projects, and contribute to impactful technology.">
+    <meta name="twitter:image" content="{{WEBSITE_URL}}/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.292.0/lucide.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Prasad",
+      "url": "{{WEBSITE_URL}}",
+      "image": "{{WEBSITE_URL}}/profile.jpg",
+      "jobTitle": "Full Stack Developer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://github.com/prasad3355",
+        "https://www.linkedin.com/in/prasad-swain-768503319/"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Prasad</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i data-lucide="sun" class="theme-icon"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-controls">
+                    <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+                        <i data-lucide="sun" class="theme-icon"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <i data-lucide="menu" class="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+
+
+
+
+<!--Animated Text heading-->
+                          <h1 class="hero-title">
+                           Hi, I'm <span class="text-primary">Prasad</span>
+                          </h1>
+
+
+                        <p class="hero-subtitle">Building ideas into impactful tech solutions.</p>
+                        <p class="hero-description">I’m Prasad, a 3rd-year Computer Science and Engineering student passionate about full-stack development, AI, and problem-solving. I’ve built academic and personal projects that strengthened my skills in modern technologies, and I’m eager to keep learning and contribute to impactful tech.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="btn btn-primary">
+                                View My Work
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="{{RESUME_FILE}}" download class="btn btn-secondary">
+                                <i data-lucide="download"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-image-container">
+                            <img src="prasad profile.jpg" alt="Prasad - Profile Photo" class="profile-image">
+                            <div class="profile-image-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding bg-gray">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-content">
+                    <div class="about-education">
+                        <h3 class="about-subtitle">Education</h3>
+                        <div class="card">
+                            <h4 class="card-title">B-Tech</h4>
+                            <p class="card-subtitle">NIST University</p>
+                            <p class="card-text">2027</p>
+                            <p class="card-text">CGPA:7.5</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-summary">
+                        <h3 class="about-subtitle">Summary</h3>
+                        <p class="about-text">I’m Prasad, a 3rd-year Computer Science student passionate about full-stack web development and AI. I enjoy solving problems through coding, building innovative projects, and continuously learning new technologies to create impactful solutions that bridge ideas with real-world applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-level">35%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h3 class="skill-category-title">AIML</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">numpy</span>
+                                    <span class="skill-level">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Pandas</span>
+                                    <span class="skill-level">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Opencv</span>
+                                    <span class="skill-level">55%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="55"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS code</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-level">45%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="45"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-level">35%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding bg-gray">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Here are some of my recent projects that showcase my skills and experience</p>
+                
+                <div class="projects-grid" id="featured-projects">
+                    <!-- Projects will be loaded by JavaScript -->
+                </div>
+                
+                <div class="text-center">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-list">
+                    <div class="experience-item card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Internship</h3>
+                                <p class="experience-company">Metabriq</p>
+                            </div>
+                            <span class="experience-period">2 month</span>
+                        </div>
+                        
+                        <p class="experience-description">Contributed to building and optimizing responsive web applications, integrated APIs for dynamic content, and improved site performance. Collaborated in an agile team, participated in code reviews, and ensured cross-browser compatibility to deliver high-quality user experiences.</p>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                            <span class="tech-tag">REACT</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Summer internship</h3>
+                                <p class="experience-company">CTTC ,Bhubneswar</p>
+                            </div>
+                            <span class="experience-period">1 month</span>
+                        </div>
+                        
+                        <p class="experience-description">Worked on developing and training machine learning models, performing data preprocessing, and analyzing datasets to derive insights. Gained hands-on experience with Python, TensorFlow, and related AI/ML tools while contributing to real-world problem-solving projects.</p>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">PYTHON</span>
+                            <span class="tech-tag">NUMPY</span>
+                            <span class="tech-tag">PANDAS</span>
+                            <span class="tech-tag">OPENCV</span>
+                            <span class="tech-tag">TENSORFLOW</span>
+
+                        </div>
+                    </div>
+                    <!-- new section-->
+     <div class="experience-item card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Social media handler</h3>
+                                <p class="experience-company">NRC ,NIST University</p>
+                            </div>
+                            <span class="experience-period">March 2025 – Present</span>
+                        </div>
+                        
+                        <p class="experience-description">Worked on managing NRC’s digital presence by creating engaging content, handling official social media accounts, and promoting events like Robo War and Robo Race. Collaborated with the team to deliver real-time updates, increase engagement, and build NRC’s online community. Gained hands-on experience in content strategy, branding, and digital communication.</p>
+                        
+                    
+        <!--End of section-->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Education Section -->
+<section id="education" class="education section-padding bg-gray">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-list">
+      <div class="education-item card">
+        <div class="education-header">
+          <div class="education-info">
+            <h3 class="education-title">B-Tech</h3>
+            <p class="education-school">NIST University</p>
+          </div>
+          <span class="education-period">2023 – 2027</span>
+        </div>
+
+        <p class="education-gpa">CGPA: 7.5</p>
+        <p class="education-description">
+          B.Tech in Computer Science and Engineering.  
+          Pursuing a degree with a focus on software development, AI/ML, and problem-solving through modern technologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Education Section -->
+         
+        <!-- <section id="education" class="education section-padding bg-gray">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-list">
+                    <div class="education-item card">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-title">B-Tech</h3>
+                                <p class="education-school">NIST University</p>
+                            </div>
+                            <span class="education-period">2023-2027</span>
+                        </div>
+                        
+                        <p class="education-gpa">CGPA:7.5</p>
+                        <p class="education-description">B.Tech in Computer Science and Engineering
+NIST University | 2023 – Present
+Pursuing a degree in Computer Science with a focus on software development, AI/ML, and problem-solving through modern technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Contact Information</h3>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i data-lucide="mail"></i>
+                                <span>prasad456434@gmail.com</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i data-lucide="phone"></i>
+                                <span>8260521733</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i data-lucide="map-pin"></i>
+                                <span>Berhampur</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-features">
+                            <h4 class="contact-features-title">Why work with me?</h4>
+                            <ul class="contact-features-list">
+                                <li>• Fast and reliable communication</li>
+                                <li>• Clean, maintainable code</li>
+                                <li>• Modern development practices</li>
+                                <li>• Attention to detail and user experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <!-- Honeypot field -->
+                        <input type="text" name="honeypot" style="display: none;" tabindex="-1" autocomplete="off">
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell me about your project..." required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <div id="form-status" class="form-status"></div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span id="submit-text">Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                        
+                        <p class="form-note">* Required fields. This form is protected against spam.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">Prasad</a>
+                    <p class="footer-role">Full Stack Developer</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/prasad3355" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prasad-swain-768503319/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:prasad456434@gmail.com" class="social-link" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
